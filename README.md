@@ -1,1 +1,0 @@
-# FDR-Figma-to-Tailwind
