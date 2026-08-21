@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figma to Tailwind</title>
-    <link rel="stylesheet" href="src/tabler-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="src/all.min.css" />
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body class="font-poppins">
@@ -22,10 +26,7 @@
           </div>
           <div class="flex items-center">
             <div class="relative group">
-              <button
-                type="button"
-                class="cursor-pointer flex items-center gap-1.5 mr-2"
-              >
+              <button type="button" class="flex items-center gap-1.5 mr-2">
                 Eng<i
                   class="ti ti-chevron-down text-[15px] transition-transform duration-300 group-focus-within:rotate-180"
                 ></i>
@@ -61,10 +62,7 @@
                 >
               </div>
             </div>
-            <button
-              type="button"
-              class="cursor-pointer flex items-center gap-1.5"
-            >
+            <button type="button" class="flex items-center gap-1.5">
               USD<i class="ti ti-chevron-down text-[15px]"></i>
             </button>
             <span class="mx-3 text-gray-200">|</span>
@@ -81,7 +79,7 @@
     <div class="py-7 font-poppins">
       <div class="max-w-mContainer m-auto">
         <div class="flex items-center justify-between">
-          <div class="">
+          <div>
             <img src="images/logo.png" alt="logo.png" />
           </div>
           <div class="relative">
@@ -106,7 +104,7 @@
               <span class="mx-1 text-gray-200 font-extralight">|</span>
               <i class="ti ti-shopping-bag"></i>
             </div>
-            <div class="">
+            <div>
               <h3 class="text-[11px] text-gray-700">Shopping cart:</h3>
               <h4 class="text-[14px] font-medium text-gray-900">$57.00</h4>
             </div>
@@ -176,10 +174,8 @@
     <!-- Banner Part Start -->
     <div class="py-5">
       <div class="max-w-mContainer m-auto">
-        <div class="flex justify-center items-center gap-x-6">
-          <div>
-            <img src="images/banner-1.png" alt="banner-1.png" />
-          </div>
+        <div class="flex items-center gap-x-6">
+          <img src="images/banner-1.png" alt="banner-1.png" />
           <div class="flex flex-col gap-y-6">
             <img src="images/banner-3.png" alt="banner-3.png" />
             <img src="images/banner-2.png" alt="banner-2.png" />
@@ -253,64 +249,60 @@
           <span class="text-[32px] font-semibold text-left text-gray-900"
             >Popular Categories</span
           >
-          <button
-            class="text-[16px] font-medium text-success cursor-pointer flex gap-x-3"
-          >
+          <button class="text-[16px] font-medium text-success flex gap-x-3">
             View All <img src="images/arrow.svg" />
           </button>
         </div>
-        <div class="mt-8 flex flex-col gap-y-6">
-          <div class="flex text-[18px] justify-between font-medium text-center">
-            <div class="category-card">
-              <img class="my-4" src="images/image 12.png" alt="image 12.png" />
-              <p class="mb-6">Fresh Fruit</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 11.png" alt="image 11.png" />
-              <p class="mb-6">Fresh Vegetables</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 10.png" alt="image 10.png" />
-              <p class="mb-6">Meat & Fish</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 9.png" alt="image 9.png" />
-              <p class="mb-6">Snacks</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 8.png" alt="image 8.png" />
-              <p class="mb-6">Beverages</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 7.png" alt="image 7.png" />
-              <p class="mb-6">Beauty & Health</p>
-            </div>
+        <div
+          class="mt-8 grid grid-cols-6 gap-6 text-[18px] font-medium text-center"
+        >
+          <div class="category-card">
+            <img class="my-4" src="images/image 12.png" alt="image 12.png" />
+            <p class="mb-6">Fresh Fruit</p>
           </div>
-          <div class="flex text-[18px] justify-between font-medium text-center">
-            <div class="category-card">
-              <img class="my-4" src="images/image 6.png" alt="image 6.png" />
-              <p class="mb-6">Bread & Bakery</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 5.png" alt="image 5.png" />
-              <p class="mb-6">Baking Needs</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 4.png" alt="image 4.png" />
-              <p class="mb-6">Cooking</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 3.png" alt="image 3.png" />
-              <p class="mb-6">Diabetic Food</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 2.png" alt="image 2.png" />
-              <p class="mb-6">Dish Detergents</p>
-            </div>
-            <div class="category-card">
-              <img class="my-4" src="images/image 1.png" alt="image 1.png" />
-              <p class="mb-6">Oil</p>
-            </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 11.png" alt="image 11.png" />
+            <p class="mb-6">Fresh Vegetables</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 10.png" alt="image 10.png" />
+            <p class="mb-6">Meat & Fish</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 9.png" alt="image 9.png" />
+            <p class="mb-6">Snacks</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 8.png" alt="image 8.png" />
+            <p class="mb-6">Beverages</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 7.png" alt="image 7.png" />
+            <p class="mb-6">Beauty & Health</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 6.png" alt="image 6.png" />
+            <p class="mb-6">Bread & Bakery</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 5.png" alt="image 5.png" />
+            <p class="mb-6">Baking Needs</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 4.png" alt="image 4.png" />
+            <p class="mb-6">Cooking</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 3.png" alt="image 3.png" />
+            <p class="mb-6">Diabetic Food</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 2.png" alt="image 2.png" />
+            <p class="mb-6">Dish Detergents</p>
+          </div>
+          <div class="category-card">
+            <img class="my-4" src="images/image 1.png" alt="image 1.png" />
+            <p class="mb-6">Oil</p>
           </div>
         </div>
       </div>
@@ -324,9 +316,7 @@
           <span class="text-[32px] font-semibold text-left text-gray-900"
             >Popular Products</span
           >
-          <button
-            class="text-[16px] font-medium text-success cursor-pointer flex gap-x-3"
-          >
+          <button class="text-[16px] font-medium text-success flex gap-x-3">
             View All <img src="images/arrow.svg" />
           </button>
         </div>
@@ -345,14 +335,15 @@
                   </h3>
                   <h4 class="text-[16px] font-medium text-gray-900">
                     $14.99
-                    <span class="text-gray-400 font-normal line-through"
+                    <span
+                      class="text-[16px] text-gray-400 font-normal line-through"
                       >$20.99</span
                     >
                   </h4>
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -373,7 +364,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -394,7 +385,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -415,7 +406,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -436,7 +427,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -460,7 +451,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -481,7 +472,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -502,7 +493,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -522,14 +513,15 @@
                   </h3>
                   <h4 class="text-[16px] font-medium text-gray-900">
                     $9.00
-                    <span class="text-gray-400 font-normal line-through"
+                    <span
+                      class="text-[16px] text-gray-400 font-normal line-through"
                       >$20.99</span
                     >
                   </h4>
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -550,7 +542,7 @@
                   <img src="images/rating.png" />
                 </div>
                 <button
-                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center cursor-pointer duration-300 group-hover:bg-success"
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
                 >
                   <i
                     class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
@@ -568,15 +560,1054 @@
     <div class="py-15">
       <div class="max-w-mContainer m-auto">
         <div class="flex justify-around gap-x-6">
-          <img src="images/Bannar.png" alt="Bannar.png">
-          <img src="images/Bannar-1.png" alt="Bannar.png">
-          <img src="images/Bannar-2.png" alt="Bannar.png">
+          <img src="images/Bannar.png" alt="Bannar.png" />
+          <img src="images/Bannar-1.png" alt="Bannar.png" />
+          <img src="images/Bannar-2.png" alt="Bannar.png" />
         </div>
       </div>
     </div>
     <!-- Offers Part End -->
 
     <!-- Hot Deals Part Start -->
+    <div class="py-12.5 bg-[#F7F7F7]">
+      <div class="max-w-mContainer m-auto px-4">
+        <div class="flex items-center justify-between mb-8">
+          <span class="text-[32px] font-semibold text-left text-gray-900"
+            >Hot Deals</span
+          >
+          <button
+            class="text-[16px] font-medium text-success flex items-center gap-x-2"
+          >
+            View All <img src="images/arrow.svg" alt="Arrow" />
+          </button>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex flex-row">
+            <div
+              class="w-132 h-163.5 shrink-0 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25flex flex-col justify-between bg-white"
+            >
+              <div class="absolute top-4 left-4 flex gap-2 z-10">
+                <span
+                  class="bg-red-500 text-white text-[14px] font-normal px-3 py-1 rounded"
+                  >Sale 50%</span
+                >
+                <span
+                  class="bg-blue-500 text-white text-[14px] font-normal px-3 py-1 rounded"
+                  >Best Sale</span
+                >
+              </div>
+              <div class="pt-8 flex items-center justify-center">
+                <img
+                  class="-m-15"
+                  src="images/Image-10.png"
+                  alt="Green Apples"
+                />
+              </div>
+              <div class="p-4 flex flex-col justify-between">
+                <div class="flex items-center justify-center gap-2 my-3">
+                  <button
+                    type="button"
+                    class="w-11 h-11 bg-gray-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="ti ti-heart text-[20px] text-gray-700"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="text-[14px] font-semibold text-white bg-success rounded-full flex items-center justify-center gap-2 py-3 px-8"
+                  >
+                    Add to Cart <i class="ti ti-shopping-bag text-[18px]"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="w-11 h-11 bg-gray-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="ti ti-eye text-[20px] text-gray-700"></i>
+                  </button>
+                </div>
+                <div class="text-center">
+                  <h3
+                    class="text-[18px] text-gray-700 font-normal duration-300 group-hover:text-success-dark"
+                  >
+                    Chinese cabbage
+                  </h3>
+                  <h4 class="text-[24px] font-medium text-gray-900 mt-1">
+                    $12.00
+                    <span
+                      class="text-[24px] font-normal text-gray-400 line-through"
+                      >$24.00</span
+                    >
+                  </h4>
+                  <img
+                    class="mx-auto mt-2"
+                    src="images/rating-5.png"
+                    alt="5 star rating, 524 feedback"
+                  />
+                </div>
+                <div class="text-center pt-3 mt-3">
+                  <p class="text-[14px] font-normal text-gray-400 mb-2">
+                    Hurry up! Offer ends in:
+                  </p>
+                  <div class="flex items-center justify-center gap-3">
+                    <div class="flex flex-col items-center">
+                      <span class="text-[18px] font-medium text-gray-900"
+                        >01</span
+                      >
+                      <span class="text-[10px] font-medium text-gray-400"
+                        >DAYS</span
+                      >
+                    </div>
+                    <span class="text-[20px] font-normal text-gray-400">:</span>
+                    <div class="flex flex-col items-center">
+                      <span class="text-[18px] font-medium text-gray-900"
+                        >23</span
+                      >
+                      <span class="text-[10px] font-medium text-gray-400"
+                        >HOURS</span
+                      >
+                    </div>
+                    <span class="text-[20px] font-normal text-gray-400">:</span>
+                    <div class="flex flex-col items-center">
+                      <span class="text-[18px] font-medium text-gray-900"
+                        >34</span
+                      >
+                      <span class="text-[10px] font-medium text-gray-400"
+                        >MINS</span
+                      >
+                    </div>
+                    <span class="text-[20px] font-normal text-gray-400">:</span>
+                    <div class="flex flex-col items-center">
+                      <span class="text-[18px] font-medium text-gray-900"
+                        >57</span
+                      >
+                      <span class="text-[10px] font-medium text-gray-400"
+                        >SECS</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap w-198 shrink-0">
+              <div
+                class="w-66 h-81.75 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+              >
+                <img
+                  class="w-full object-contain mx-auto"
+                  src="images/Product Image-9.png"
+                  alt="Chinese cabbage"
+                />
+                <div class="flex items-end justify-between p-2">
+                  <div class="text-left">
+                    <h3
+                      class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                    >
+                      Chinese cabbage
+                    </h3>
+                    <h4 class="text-[16px] font-medium text-gray-900">
+                      $12.00
+                    </h4>
+                    <img src="images/rating.png" alt="Rating" />
+                  </div>
+                  <button
+                    type="button"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                  >
+                    <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-66 h-81.75 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+              >
+                <img
+                  class="w-full object-contain mx-auto"
+                  src="images/Product Image-5.png"
+                  alt="Green Lettuce"
+                />
+                <div class="flex items-end justify-between p-2">
+                  <div class="text-left">
+                    <h3
+                      class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                    >
+                      Green Lettuce
+                    </h3>
+                    <h4 class="text-[16px] font-medium text-gray-900">$9.00</h4>
+                    <img src="images/rating.png" alt="Rating" />
+                  </div>
+                  <button
+                    type="button"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                  >
+                    <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-66 h-81.75 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+              >
+                <img
+                  class="w-full object-contain mx-auto"
+                  src="images/Product Image-7.png"
+                  alt="Eggplant"
+                />
+                <div class="flex items-end justify-between p-2">
+                  <div class="text-left">
+                    <h3
+                      class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                    >
+                      Eggplant
+                    </h3>
+                    <h4 class="text-[16px] font-medium text-gray-900">
+                      $34.00
+                    </h4>
+                    <img src="images/rating.png" alt="Rating" />
+                  </div>
+                  <button
+                    type="button"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                  >
+                    <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-66 h-81.75 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+              >
+                <img
+                  class="w-full object-contain mx-auto"
+                  src="images/Product Image-4.png"
+                  alt="Fresh Cauliflower"
+                />
+                <div class="flex items-end justify-between p-2">
+                  <div class="text-left">
+                    <h3
+                      class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                    >
+                      Fresh Cauliflower
+                    </h3>
+                    <h4 class="text-[16px] font-medium text-gray-900">
+                      $12.00
+                    </h4>
+                    <img src="images/rating.png" alt="Rating" />
+                  </div>
+                  <button
+                    type="button"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                  >
+                    <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-66 h-81.75 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+              >
+                <span
+                  class="absolute top-4 left-4 bg-red-500 text-white text-[12px] font-normal px-2.5 py-0.5 rounded z-10"
+                  >Sale 50%</span
+                >
+                <img
+                  class="w-full object-contain mx-auto"
+                  src="images/Product Image-6.png"
+                  alt="Green Capsicum"
+                />
+                <div class="flex items-end justify-between p-2">
+                  <div class="text-left">
+                    <h3
+                      class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                    >
+                      Green Capsicum
+                    </h3>
+                    <h4 class="text-[16px] font-medium text-gray-900">
+                      $9.00
+                      <span
+                        class="text-[14px] font-normal text-gray-400 line-through"
+                        >$20.99</span
+                      >
+                    </h4>
+                    <img src="images/rating.png" alt="Rating" />
+                  </div>
+                  <button
+                    type="button"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                  >
+                    <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-66 h-81.75 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+              >
+                <img
+                  class="w-full object-contain mx-auto"
+                  src="images/Product Image-8.png"
+                  alt="Green Chili"
+                />
+                <div class="flex items-end justify-between p-2">
+                  <div class="text-left">
+                    <h3
+                      class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                    >
+                      Green Chili
+                    </h3>
+                    <h4 class="text-[16px] font-medium text-gray-900">
+                      $34.00
+                    </h4>
+                    <img src="images/rating.png" alt="Rating" />
+                  </div>
+                  <button
+                    type="button"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                  >
+                    <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row w-full">
+            <div
+              class="w-66 h-81.75 shrink-0 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+            >
+              <img
+                class="w-full object-contain mx-auto"
+                src="images/Product Image-3.png"
+                alt="Big Potatoes"
+              />
+              <div class="flex items-end justify-between p-2">
+                <div class="text-left">
+                  <h3
+                    class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                  >
+                    Big Potatoes
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$12.00</h4>
+                  <img src="images/rating.png" alt="Rating" />
+                </div>
+                <button
+                  type="button"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                >
+                  <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="w-66 h-81.75 shrink-0 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+            >
+              <img
+                class="w-full object-contain mx-auto"
+                src="images/Product Image-2.png"
+                alt="Corn"
+              />
+              <div class="flex items-end justify-between p-2">
+                <div class="text-left">
+                  <h3
+                    class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                  >
+                    Corn
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$12.00</h4>
+                  <img src="images/rating.png" alt="Rating" />
+                </div>
+                <button
+                  type="button"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                >
+                  <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="w-66 h-81.75 shrink-0 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+            >
+              <img
+                class="w-full object-contain mx-auto"
+                src="images/Image-1.png"
+                alt="Red Chili"
+              />
+              <div class="flex items-end justify-between p-2">
+                <div class="text-left">
+                  <h3
+                    class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                  >
+                    Red Chili
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$12.00</h4>
+                  <img src="images/rating.png" alt="Rating" />
+                </div>
+                <button
+                  type="button"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                >
+                  <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="w-66 h-81.75 shrink-0 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+            >
+              <span
+                class="absolute top-4 left-4 bg-red-500 text-white text-[12px] font-normal px-2.5 py-0.5 rounded z-10"
+                >Sale 50%</span
+              >
+              <img
+                class="w-full object-contain mx-auto"
+                src="images/Image-6.png"
+                alt="Red Tomatoes"
+              />
+              <div class="flex items-end justify-between p-2">
+                <div class="text-left">
+                  <h3
+                    class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                  >
+                    Red Tomatos
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">
+                    $9.00
+                    <span
+                      class="text-[14px] font-normal text-gray-400 line-through"
+                      >$20.99</span
+                    >
+                  </h4>
+                  <img src="images/rating.png" alt="Rating" />
+                </div>
+                <button
+                  type="button"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                >
+                  <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="w-66 h-81.75 shrink-0 group relative border border-gray-100 hover:border-success-dark hover:shadow-[0_0_12px_rgba(32,181,38,0.32)] hover:z-10 transition-all duration-300 p-1.25 flex flex-col justify-between bg-white"
+            >
+              <img
+                class="w-full object-contain mx-auto"
+                src="images/Image-8.png"
+                alt="Red Tomatoes"
+              />
+              <div class="flex items-end justify-between p-2">
+                <div class="text-left">
+                  <h3
+                    class="text-[14px] text-gray-700 transition-all group-hover:text-success-dark"
+                  >
+                    Surjapur Mango
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$34.00</h4>
+                  <img src="images/rating.png" alt="Rating" />
+                </div>
+                <button
+                  type="button"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center"
+                >
+                  <i class="ti ti-shopping-bag text-[18px] text-gray-700"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Hot Deals Part End -->
+
+    <!-- Discount Banner Part Start -->
+    <div class="py-15">
+      <div class="max-w-mContainer m-auto">
+        <img src="images/Discount Bannar.png" />
+      </div>
+    </div>
+    <!-- Discount Banner Part End -->
+
+    <!-- Featured Products Part Start -->
+    <div class="py-12.5">
+      <div class="max-w-mContainer m-auto">
+        <div class="flex items-center justify-between">
+          <span class="text-[32px] font-semibold text-left text-gray-900"
+            >Popular Products</span
+          >
+          <button class="text-[16px] font-medium text-success flex gap-x-3">
+            View All <img src="images/arrow.svg" />
+          </button>
+        </div>
+        <div class="mt-8 flex flex-col">
+          <!-- Row 1 -->
+          <div class="flex items-center">
+            <div class="product-card group relative">
+              <img class="mt-4 ml-4 absolute" src="images/tag.png" />
+              <img src="images/Product Image.png" />
+              <div class="flex items-center justify-between mx-3">
+                <div class="text-left mb-3">
+                  <h3
+                    class="text-[14px] text-gray-700 duration-300 group-hover:text-success-dark"
+                  >
+                    Green Apple
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">
+                    $14.99
+                    <span
+                      class="text-[16px] text-gray-400 font-normal line-through"
+                      >$20.99</span
+                    >
+                  </h4>
+                  <img src="images/rating.png" />
+                </div>
+                <button
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
+                >
+                  <i
+                    class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-card group">
+              <img src="images/Product Image-1.png" />
+              <div class="flex items-center justify-between mx-3">
+                <div class="text-left mb-3">
+                  <h3
+                    class="text-[14px] text-gray-700 duration-300 group-hover:text-success-dark"
+                  >
+                    Fresh Indian Malta
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$20.00</h4>
+                  <img src="images/rating.png" />
+                </div>
+                <button
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
+                >
+                  <i
+                    class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-card group">
+              <img src="images/Product Image-9.png" />
+              <div class="flex items-center justify-between mx-3">
+                <div class="text-left mb-3">
+                  <h3
+                    class="text-[14px] text-gray-700 duration-300 group-hover:text-success-dark"
+                  >
+                    Chinese cabbage
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$12.00</h4>
+                  <img src="images/rating.png" />
+                </div>
+                <button
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
+                >
+                  <i
+                    class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-card group">
+              <img src="images/Product Image-5.png" />
+              <div class="flex items-center justify-between mx-3">
+                <div class="text-left mb-3">
+                  <h3
+                    class="text-[14px] text-gray-700 duration-300 group-hover:text-success-dark"
+                  >
+                    Green Lettuce
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$9.00</h4>
+                  <img src="images/rating.png" />
+                </div>
+                <button
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
+                >
+                  <i
+                    class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-card group">
+              <img src="images/Product Image-7.png" />
+              <div class="flex items-center justify-between mx-3">
+                <div class="text-left mb-3">
+                  <h3
+                    class="text-[14px] text-gray-700 duration-300 group-hover:text-success-dark"
+                  >
+                    Eggplant
+                  </h3>
+                  <h4 class="text-[16px] font-medium text-gray-900">$34.00</h4>
+                  <img src="images/rating.png" />
+                </div>
+                <button
+                  class="w-9 h-9 rounded-full bg-gray-100 -translate-y-2 flex items-center justify-center duration-300 group-hover:bg-success"
+                >
+                  <i
+                    class="ti ti-shopping-bag text-[20px] text-gray-700 duration-300 group-hover:text-white"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Products Part End -->
+
+    <!-- News Part Start -->
+    <div class="py-15">
+      <div class="max-w-mContainer m-auto">
+        <h3 class="text-center text-[32px] font-semibold">Latest News</h3>
+        <div class="mt-5 flex gap-x-6">
+          <div
+            class="flex flex-col gap-y-0 hover:shadow-[0px_20px_50px_rgba(0,0,255,0.2)] duration-300 group"
+          >
+            <div class="relative">
+              <img src="images/Card-1.png" alt="Card-1.png" />
+              <div
+                class="absolute w-14.5 h-14.5 bottom-6 left-6 bg-white rounded-sm"
+              >
+                <h3 class="text-[20px] font-medium text-center mt-1">18</h3>
+                <h4 class="text-[12px] font-medium text-center uppercase">
+                  Nov
+                </h4>
+              </div>
+            </div>
+            <div class="p-6 w-106 h-auto border border-gray-100 rounded-b-sm">
+              <div class="flex gap-x-6 items-center">
+                <div class="flex gap-x-1">
+                  <img src="images/tag-1.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">Food</p>
+                </div>
+                <div class="flex gap-x-1">
+                  <img src="images/user.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">
+                    <span class="text-gray-500">By</span> Admin
+                  </p>
+                </div>
+                <div class="flex gap-x-1">
+                  <img src="images/chat.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">65 Comments</p>
+                </div>
+              </div>
+              <p
+                class="mt-2 text-gray-900 text-[18px] font-medium text-left group-hover:text-success-dark duration-300"
+              >
+                Curabitur porttitor orci eget neque accumsan venenatis. Nunc
+                fermentum.
+              </p>
+              <button
+                class="text-[16px] mt-5 font-semibold text-success flex gap-x-3"
+              >
+                Read More<img src="images/arrow.svg" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-0 hover:shadow-[0px_20px_50px_rgba(0,0,0,0.2)] duration-300 group"
+          >
+            <div class="relative">
+              <img src="images/Card-2.png" alt="Card-1.png" />
+              <div
+                class="absolute w-14.5 h-14.5 bottom-6 left-6 bg-white rounded-sm"
+              >
+                <h3 class="text-[20px] font-medium text-center mt-1">18</h3>
+                <h4 class="text-[12px] font-medium text-center uppercase">
+                  Nov
+                </h4>
+              </div>
+            </div>
+            <div class="p-6 w-106 h-auto border border-gray-100 rounded-b-sm">
+              <div class="flex gap-x-6 items-center">
+                <div class="flex gap-x-1">
+                  <img src="images/tag-1.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">Food</p>
+                </div>
+                <div class="flex gap-x-1">
+                  <img src="images/user.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">
+                    <span class="text-gray-500">By</span> Admin
+                  </p>
+                </div>
+                <div class="flex gap-x-1">
+                  <img src="images/chat.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">65 Comments</p>
+                </div>
+              </div>
+              <p
+                class="mt-2 text-gray-900 text-[18px] font-medium text-left group-hover:text-success-dark duration-300"
+              >
+                Eget lobortis lorem lacinia. Vivamus pharetra semper,
+              </p>
+              <button
+                class="text-[16px] mt-5 font-semibold text-success flex gap-x-3"
+              >
+                Read More<img src="images/arrow.svg" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-0 hover:shadow-[0px_20px_50px_rgba(0,0,0,0.2)] duration-300 group"
+          >
+            <div class="relative">
+              <img src="images/Card-3.png" alt="Card-1.png" />
+              <div
+                class="absolute w-14.5 h-14.5 bottom-6 left-6 bg-white rounded-sm"
+              >
+                <h3 class="text-[20px] font-medium text-center mt-1">18</h3>
+                <h4 class="text-[12px] font-medium text-center uppercase">
+                  Nov
+                </h4>
+              </div>
+            </div>
+            <div class="p-6 w-106 h-auto border border-gray-100 rounded-b-sm">
+              <div class="flex gap-x-6 items-center">
+                <div class="flex gap-x-1">
+                  <img src="images/tag-1.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">Food</p>
+                </div>
+                <div class="flex gap-x-1">
+                  <img src="images/user.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">
+                    <span class="text-gray-500">By</span> Admin
+                  </p>
+                </div>
+                <div class="flex gap-x-1">
+                  <img src="images/chat.png" class="w-5 h-5" />
+                  <p class="text-[14px] text-gray-700">65 Comments</p>
+                </div>
+              </div>
+              <p
+                class="mt-2 text-gray-900 text-[18px] font-medium text-left group-hover:text-success-dark duration-300"
+              >
+                Maecenas blandit risus elementum mauris malesuada.
+              </p>
+              <button
+                class="text-[16px] mt-5 font-semibold text-success flex gap-x-3"
+              >
+                Read More<img src="images/arrow.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News Part End -->
+    <!-- Testimonials Part Start -->
+    <div class="py-15 bg-gray-50">
+      <div class="max-w-mContainer m-auto">
+        <div class="flex items-center justify-between">
+          <span class="text-[32px] font-semibold text-left text-gray-900"
+            >Client Testimonials</span
+          >
+
+          <div class="flex gap-x-3">
+            <button
+              type="button"
+              class="bg-white w-11.25 h-11.25 rounded-full flex items-center justify-center transition-colors duration-300 hover:bg-success group"
+            >
+              <i
+                class="arrow-prev ti ti-arrow-narrow-left text-[36px] text-gray-900 transition-colors duration-300 group-hover:text-white"
+              ></i>
+            </button>
+            <button
+              type="button"
+              class="bg-white w-11.25 h-11.25 rounded-full flex items-center justify-center transition-colors duration-300 hover:bg-success group"
+            >
+              <i
+                class="arrow-next ti ti-arrow-narrow-right text-[36px] text-gray-900 transition-colors duration-300 group-hover:text-white"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-between mt-8">
+          <div class="testimonial-card">
+            <img src="images/quote.svg" />
+            <p class="text-[14px] py-4 text-left">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </p>
+            <div class="flex items-center">
+              <img src="images/robert_fox.png" alt="robert_fox.png" />
+              <div class="ml-3">
+                <h3 class="text-[16px] font-medium">Robert Fox</h3>
+                <h4 class="text-[14px]">Customer</h4>
+              </div>
+              <img class="w-26 h-5 ml-26" src="images/Rating.png" />
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/quote.svg" />
+            <p class="text-[14px] py-4 text-left">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </p>
+            <div class="flex items-center">
+              <img src="images/dianne_russell.png" alt="dianne_russell.png" />
+              <div class="ml-3 -mr-5">
+                <h3 class="text-[16px] w-29.5 font-medium">Dianne Russell</h3>
+                <h4 class="text-[14px]">Customer</h4>
+              </div>
+              <img class="w-26 h-5 ml-26" src="images/Rating.png" />
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/quote.svg" />
+            <p class="text-[14px] py-4 text-left">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </p>
+            <div class="flex items-center">
+              <img src="images/eleanor_pena.png" alt="eleanor_pena.png" />
+              <div class="ml-3">
+                <h3 class="text-[16px] font-medium">Eleanor Pea</h3>
+                <h4 class="text-[14px]">Customer</h4>
+              </div>
+              <img class="w-26 h-5 ml-26" src="images/Rating.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Part End -->
+
+    <!-- Company Logo Part Start  -->
+    <div>
+      <div class="max-w-mContainer m-auto">
+        <img src="images/Company Logo.png" alt="Company Logo.png" />
+      </div>
+    </div>
+    <!-- Company Logo Part End  -->
+
+    <!-- Instagram CTA Part Start -->
+    <div>
+      <div class="max-w-mContainer m-auto">
+        <h3 class="text-[32px] pb-8 font-semibold text-center">
+          Follow us on Instagram
+        </h3>
+        <div class="flex justify-between">
+          <img src="images/Post-1.png" alt="Post-1.png" />
+          <img src="images/Post-2.png" alt="Post-2.png" />
+          <img src="images/Post-3.png" alt="Post-3.png" />
+          <img src="images/Post-4.png" alt="Post-4.png" />
+          <img src="images/Post-5.png" alt="Post-5.png" />
+          <img src="images/Post-6.png" alt="Post-6.png" />
+        </div>
+      </div>
+    </div>
+    <!-- Instagram CTA Part End -->
+
+    <!-- Newsletter CTA Part Start -->
+    <div class="pt-15">
+      <div class="max-w-mContainer m-auto">
+        <div class="py-10 flex items-center justify-between">
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-900">
+              Subcribe our Newsletter
+            </h3>
+            <h4 class="text-gray-400 text-sm w-md">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna.
+            </h4>
+          </div>
+          <div class="relative">
+            <input
+              type="text"
+              class="py-3.5 px-6 w-123 border border-gray-100 rounded-l-2xl"
+              placeholder="Your email address"
+            />
+            <button
+              type="button"
+              class="absolute bg-success text-white rounded-r-2xl py-3.5 px-4 top-0 right-0 font-semibold text-[14px] cursor-pointer"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="flex items-center gap-x-9">
+            <a href="#"
+              ><img class="social-icon" src="images/facebook.svg"
+            /></a>
+            <a href="#"><img class="social-icon" src="images/twitter.svg" /></a>
+            <a href="#"
+              ><img class="social-icon" src="images/pinterest.svg"
+            /></a>
+            <a href="#"
+              ><img class="social-icon" src="images/instagram.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter CTA Part End -->
+
+    <!-- Footer Part Start -->
+    <div class="pt-15 pb-10 bg-gray-900">
+      <div class="max-w-mContainer m-auto px-4">
+        <!-- Top Main Content -->
+        <div class="flex justify-between gap-x-8 pb-15">
+          <!-- Brand & Contact Column -->
+          <div class="w-84 shrink-0">
+            <img src="images/Logo.png" alt="Ecobazar Logo" />
+            <h3
+              class="my-4 text-[14px] text-gray-500 text-left leading-relaxed"
+            >
+              Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+              dui, eget bibendum magna congue nec.
+            </h3>
+            <h4
+              class="text-[14px] text-white font-medium flex items-center gap-2 mt-4"
+            >
+              <span class="border-b-2 border-success pb-0.5"
+                >(219) 555-0114</span
+              >
+              <span class="text-[16px] font-normal text-gray-400">or</span>
+              <span class="border-b-2 border-success pb-0.5"
+                >Proxy@gmail.com</span
+              >
+            </h4>
+          </div>
+
+          <!-- Links Columns Group -->
+          <div class="flex justify-between w-full max-w-[800px]">
+            <!-- My Account Column -->
+            <div class="flex flex-col gap-y-3 text-left">
+              <h2 class="text-white text-[16px] font-medium mb-1">
+                My Account
+              </h2>
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >My Account</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Order History</a
+              >
+              <a
+                href="#"
+                class="text-white text-[14px] font-medium hover:text-success transition-colors duration-200 mt-1"
+                >Shoping Cart</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Wishlist</a
+              >
+            </div>
+
+            <!-- Helps Column -->
+            <div class="flex flex-col gap-y-3 text-left">
+              <h2 class="text-white text-[16px] font-medium mb-1">Helps</h2>
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Contact</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Faqs</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Terms & Condition</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Privacy Policy</a
+              >
+            </div>
+
+            <!-- Proxy Column -->
+            <div class="flex flex-col gap-y-3 text-left">
+              <h2 class="text-white text-[16px] font-medium mb-1">Proxy</h2>
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >About</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Shop</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Product</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Track Order</a
+              >
+            </div>
+
+            <!-- Categories Column -->
+            <div class="flex flex-col gap-y-3 text-left">
+              <h2 class="text-white text-[16px] font-medium mb-1">
+                Categories
+              </h2>
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Fruit & Vegetables</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Meat & Fish</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Bread & Bakery</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-[14px] hover:text-white transition-colors duration-200"
+                >Beauty & Health</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar / Copyright -->
+        <div
+          class="border-t border-gray-800 pt-6 flex items-center justify-between"
+        >
+          <p class="text-gray-500 text-[14px]">
+            Ecobazar eCommerce © 2021. All Rights Reserved
+          </p>
+          <div class="flex items-center gap-x-2">
+            <img
+              src="images/apple_pay.png"
+              alt="Apple Pay"
+              class="h-8 object-contain"
+            />
+            <img src="images/visa.png" alt="Visa" class="h-8 object-contain" />
+            <img
+              src="images/discover.png"
+              alt="Discover"
+              class="h-8 object-contain"
+            />
+            <img
+              src="images/mastercard.png"
+              alt="MasterCard"
+              class="h-8 object-contain"
+            />
+            <img
+              src="images/secure_payment.png"
+              alt="Secure Payment"
+              class="h-8 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Part End -->
   </body>
 </html>
